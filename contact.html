@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Event Management</title>
+
+  <!-- Fontawesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+ 
+
+    
+
+
+</head>
+
+<body>
+	
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html">
+            <img src="img/my-2.png">
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">HOME</a></li>
+            <li><a href="index.html" data-after="ABOUTUS">ABOUT US</a></li>
+			<li><a href="index.html" data-after="EVENTS">EVENT</a></li>
+			
+            <li><a href="index.html" data-after="SPEAKERS">SPEAKERS</a></li>
+			<li><a href="index.html" data-after="TICKET">TICKET</a></li>
+            <li><a href="index.html" data-after="SPONSORS">SPONSORS</a></li>
+			<li><a href="index.html" data-after="CONTACT">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	
+     
+	 
+  </section>
+  <!-- End Header -->
+
+ <section class = "contact-section">
+      <div class = "contact-bg">
+	 
+        <h3>Get in Touch with Us</h3>
+        <h2>contact us</h2>
+        <div class = "line">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p class = "text" >Passinate About Web Development Goal
+			Is To Achieve A Good Position By Doing 
+			Satisfying Work In The IT Field, Strongly
+			Focused To Complete The Tasks In Fast –
+			Faced Environment.</p>
+      </div>
+
+
+      <div class = "contact-body">
+        <div class = "contact-info">
+          <div>
+            <span><i class = "fas fa-mobile-alt"></i></span>
+            <span>Phone No</span>
+            <span class = "text">+91 6379538155</span>
+			<span class = "text">+91 7092752051</span>
+          </div>
+          <div>
+            <span><i class = "fas fa-envelope-open"></i></span>
+            <span>E-mail</span>
+            <span class = "text">manojkumarsp009@gmail.com</span>
+			 <span class = "text">gopinathn120@gmail.com</span>
+          </div>
+          <div>
+            <span><i class = "fas fa-map-marker-alt"></i></span>
+            <span>Address</span>
+            <span class = "text">Tamil Nadu</span>
+			<span class = "text">India</span>
+          </div>
+          <div>
+            <span><i class = "fas fa-clock"></i></span>
+            <span>Contact Timing</span>
+            <span class = "text">Monday - Friday (9:00 AM to 6:00 PM)</span>
+          </div>
+        </div>
+
+        <div class = "contact-form">
+          <form action="https://formcarry.com/s/_H4j7yLFfx2" method="POST">
+            <div>
+              <input type = "text" class = "form-control" placeholder="First Name" name="F Name">
+              <input type = "text" class = "form-control" placeholder="Last Name" name="L Name">
+            </div>
+            <div>
+              <input type = "email" class = "form-control" placeholder="E-mail" name="E-mail">
+              <input type = "text" class = "form-control" placeholder="Phone" name="Phone">
+            </div>
+            <textarea rows = "5" placeholder="Message" class = "form-control" name="Message"></textarea>
+           
+			 <input type = "submit" class = "send-btn" value = "send message" >
+			 
+		    
+          </form>
+		  
+		
+		
+          <div>
+            <img src = "img/contact-png.png" alt = "">
+		
+          </div>
+        </div>
+      </div>
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>M</span>ANOJ <span>K</span>UMAR</h1>
+      </div>
+      <h2>Social Media</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="img/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="img/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="img/twitter.png" /></a>
+        </div>
+       
+      </div>
+      <p>Copyright © 2022. All rights reserved MK</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  
+  
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 8, 2022 15:37:25").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+   // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days  +  "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }}, 1000);
+</script>
+  
+  
+  <script src="./app.js"></script>
+
+</body>
+
+</html>
